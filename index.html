@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AxleSet — Truck Weight &amp; Tandem Slide Calculator</title>
+<meta name="description" content="Type the three weights from your CAT Scale ticket and AxleSet tells you how many holes to slide the tandems and how many fifth-wheel notches — with the Federal Bridge Formula, kingpin rules and all 50 states' limits, fully offline.">
+<link rel="canonical" href="https://axleset.com/">
+<link rel="icon" href="/icono.png" type="image/png">
+<link rel="apple-touch-icon" href="/icono.png">
+<meta property="og:title" content="AxleSet — Truck Weight &amp; Tandem Slide Calculator">
+<meta property="og:description" content="Steer, drives, trailer in. Holes and notches out. Bridge formula, kingpin rules and 50 states, offline.">
+<meta property="og:image" content="https://axleset.com/icono.png">
+<meta property="og:url" content="https://axleset.com/">
+<style>
+:root{color-scheme:light dark;
+  --tinta:#14181d; --suave:#6b6a66; --fondo:#f6f4ef; --tarjeta:#ffffff; --borde:#e4dfd5;
+  --ambar:#b46f00; --ambar-suave:rgba(245,166,35,.16); --verde:#2e7d4f; --rojo:#b3261e}
+@media (prefers-color-scheme:dark){:root{
+  --tinta:#e6e1d8; --suave:#a39e94; --fondo:#14181d; --tarjeta:#1c2129; --borde:#2b323c;
+  --ambar:#f5a623; --ambar-suave:rgba(245,166,35,.14); --verde:#6fd39a; --rojo:#ff8a80}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-text-size-adjust:100%}
+a{color:var(--ambar)}
+.barra{border-bottom:1px solid var(--borde);background:var(--tarjeta)}
+.barra div{max-width:44rem;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:10px}
+.barra img{width:28px;height:28px;border-radius:7px}
+.barra strong{font-size:17px}
+.barra strong a{color:inherit;text-decoration:none}
+.barra nav{margin-left:auto;display:flex;gap:16px;font-size:14px}
+.barra nav a{text-decoration:none}
+main{max-width:44rem;margin:0 auto;padding:2.2rem 1.25rem 4rem}
+h1{font-size:2rem;line-height:1.15;letter-spacing:-.3px;margin:0 0 .5rem}
+h2{font-size:1.2rem;margin:2.2rem 0 .5rem}
+.sub{color:var(--suave);font-size:1.05rem;margin:0 0 1.6rem}
+.caja{background:var(--ambar-suave);border-radius:12px;padding:1rem 1.2rem;margin:1.4rem 0}
+.ticket{background:var(--tarjeta);border:1px solid var(--borde);border-radius:14px;padding:1.1rem 1.3rem;
+  font-variant-numeric:tabular-nums;margin:1.4rem 0}
+.ticket table{width:100%;border-collapse:collapse}
+.ticket td{padding:.3rem 0}
+.ticket td:last-child{text-align:right;font-weight:600}
+.ticket .r{color:var(--rojo)} .ticket .v{color:var(--verde)}
+.ticket .resp{border-top:1px solid var(--borde);margin-top:.6rem;padding-top:.7rem;font-size:1.15rem;font-weight:700}
+ul{padding-left:1.2rem} li{margin:.4rem 0}
+.suave{color:var(--suave);font-size:.9rem}
+.pie{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--borde);color:var(--suave);font-size:.85rem}
+.pie a{margin-right:14px}
+.badge{display:inline-block;background:var(--tarjeta);border:1px solid var(--borde);border-radius:999px;
+  padding:.3rem .8rem;font-size:.85rem;color:var(--suave);margin:.2rem .3rem .2rem 0}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"AxleSet",
+"alternateName":"AxleSet: Truck Weight & Slide",
+"applicationCategory":"UtilitiesApplication","operatingSystem":"iOS",
+"description":"Axle weight and tandem slide calculator for truckers: enter steer, drives and trailer weights from the scale ticket and get the exact holes and fifth-wheel notches to be legal, with the Federal Bridge Formula, kingpin-to-rear-axle rules and all 50 states' limits, offline.",
+"inLanguage":["en","es","fr","ru","pa"],"url":"https://axleset.com/"}
+</script>
+</head>
+<body>
+<div class="barra"><div><img src="/icono.png" alt=""><strong><a href="/">AxleSet</a></strong>
+<nav><a href="/support.html">Support</a><a href="/privacy.html">Privacy</a></nav></div></div>
+<main>
+<h1>Steer, drives, trailer in. Holes and notches out.</h1>
+<p class="sub">Type the three weights from your scale ticket. AxleSet tells you exactly how many
+holes to slide the tandems and how many fifth-wheel notches to move — for <em>your</em> trailer,
+in <em>your</em> state, with no signal needed.</p>
+
+<div class="ticket">
+<table>
+<tr><td>STEER</td><td>11,500</td></tr>
+<tr><td>DRIVES</td><td class="r">35,000</td></tr>
+<tr><td>TRAILER</td><td>32,000</td></tr>
+<tr><td>GROSS</td><td>78,500</td></tr>
+</table>
+<div class="resp v">Slide tandems 3 holes forward → Steer 11,370 · Drives 33,883 · Trailer 33,247 ✓</div>
+<p class="suave" style="margin:.6rem 0 0">Worked by the app for a typical 53-ft van (6-inch holes, tandems at 40 ft). Your trailer gives its own number.</p>
+</div>
+
+<span class="badge">One-time purchase</span><span class="badge">No subscription</span>
+<span class="badge">Works offline</span><span class="badge">No data collected</span>
+<span class="badge">English · Español · Français · Русский · ਪੰਜਾਬੀ</span>
+
+<h2>Not a rule of thumb</h2>
+<p>"About 400 pounds a hole" is a guess. The real number depends on your trailer: the weight the
+tandems carry, the hole spacing on the rail, and the kingpin-to-tandem distance. AxleSet takes your
+rig's measurements once and works every hole and every fifth-wheel notch from the geometry — then
+shows you what happens at each one, so you can see why the answer is what it is.</p>
+
+<h2>The checks the other calculators skip</h2>
+<ul>
+  <li><strong>Federal Bridge Formula</strong> (23 CFR 658.17) on every group of consecutive axles,
+  including the 36-foot two-tandem exception. Verified cell by cell against the published table.</li>
+  <li><strong>Kingpin-to-rear-axle rules</strong> — California's 40 feet and the other states that
+  have one, including the ones that measure differently.</li>
+  <li><strong>All 50 states</strong>: single, tandem, gross, bridge, and the fine schedule, each
+  read on the state's own statute or DOT page and cited. If a state could not be confirmed from an
+  official source, the app says <em>not verified</em> and falls back to federal — it never guesses.</li>
+  <li><strong>Interstate vs. state highway</strong> where the limits differ, and the APU allowance.</li>
+</ul>
+
+<h2>Built for the scale house</h2>
+<ul>
+  <li>Scan the CAT Scale ticket with the camera; the numbers are read on the phone.</li>
+  <li>Save tickets with the photo, reweigh and compare, export a PDF.</li>
+  <li>Several rigs saved — switch trailers in one tap.</li>
+  <li>Calibrate the kingpin-to-tandem distance from two weighings, no tape measure.</li>
+  <li>CAT Scale locations near you, with directions.</li>
+  <li>Dark mode for the night shift. Big numbers, big buttons.</li>
+</ul>
+
+<div class="caja">
+<strong>Coming to the App Store for iPhone.</strong> Questions or a number you think is wrong?
+See the <a href="/support.html">support page</a>.
+</div>
+
+<p class="suave">AxleSet is a reference and a calculator, not legal advice. Laws change, permits
+change things, and the officer's table wins at the roadside. CAT Scale is a trademark of its owner;
+AxleSet is not affiliated with CAT Scale Company. Scale locations © OpenStreetMap contributors (ODbL).</p>
+
+<div class="pie"><a href="/support.html">Support</a><a href="/privacy.html">Privacy</a>
+<span>© 2026 Rafael Vásquez</span></div>
+</main>
+</body>
+</html>
